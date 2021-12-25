@@ -1,0 +1,76 @@
+body {
+  font-family: "roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  direction: none;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* -----------категории------------- */
+.catigories {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.catigories-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #000000;
+}
+.catigories-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+}
+
+.catigories-item {
+  overflow: hidden;
+  border-radius: 6px 6px 0px 0px;
+  width: 256px;
+  border: 1px solid #d9d9de;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+.catigories-wraper {
+  padding: 13px 19px 16px;
+}
