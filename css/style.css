@@ -74,3 +74,63 @@ a {
 .catigories-wraper {
   padding: 13px 19px 16px;
 }
+
+/* ------------- class="galary-batton-item"----------------*/
+
+.directions {
+  background: rgba(112, 207, 41, 0.07);
+  padding-top: 44px;
+  padding-bottom: 80px;
+}
+.directions-title {
+  margin-bottom: 50px;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.3em;
+  text-align: center;
+  color: #000000;
+}
+.direction-discription {
+  font-size: 16px;
+  line-height: 1.3em;
+  color: #333333;
+}
+.direction-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.direction-item {
+  width: calc((100% - 132px) / 4);
+  margin-right: 33px;
+  margin-bottom: 37px;
+}
+
+/* фото-галерея */
+.galery-titel {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.3em;
+  color: #000000;
+}
+.direction-discription {
+}
+
+.galery-link {
+  font-size: 16px;
+  line-height: 1.19;
+  text-decoration-line: underline;
+  color: #0050b2;
+}
+
+.galery-wraper {
+}
+
+.galery-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #0061d9;
+  border-radius: 22px;
+  line-height: 1.3px;
+}
