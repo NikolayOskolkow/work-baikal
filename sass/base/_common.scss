@@ -1,0 +1,11 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+li {
+    list-style: var(--item-point);
+}
+
+.current {
+    color: var(--link-accent-color);
+}
