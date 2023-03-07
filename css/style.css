@@ -1,6 +1,18 @@
+:root {
+  --first-color-text: #ffffff;
+  --secondari-color-text: #000000;
+  --additional-color-text: #76767A;
+  --accent-color: #0050B2;
+  --secondary-accent-color: #64BD22;
+}
+
 body {
   font-family: "roboto", sans-serif;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-weight: 400;
 }
+
 h1,
 h2,
 h3,
@@ -8,18 +20,22 @@ h4,
 p {
   margin: 0;
 }
+
 ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
+
 button {
   cursor: pointer;
   direction: none;
 }
+
 img {
   display: block;
 }
+
 a {
   text-decoration: none;
 }
@@ -43,4 +59,519 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+
+
+/* -----------HEADER---------------- */
+
+
+.header {
+  padding-top: 13px;
+  padding-bottom: 20px;
+  background-color: #333333;
+}
+
+.header-wrapper-top {
+  /* border-bottom: 1px solid green; */
+  display: flex;
+  margin-bottom: 34px;
+}
+
+
+.logo-link {
+  margin-right: 184px;
+
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--first-color-text);
+}
+
+.logo-bottom {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16
+}
+
+.nav::before{
+  content: "";
+  max-width: 1920px;
+  height: 2px;
+  background-color: orange;
+  display: block;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.header-item-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--first-color-text);
+}
+
+.header-btn {
+  display: block;
+  margin-left: auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  min-height: 44px;
+  min-width: 186px;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--first-color-text);
+  background-color: red;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item-link {
+  font-size: 16px;
+line-height: 1.19;
+color: var(--first-color-text);
+}
+
+/* ------------HERO--------------- */
+.hero {
+  padding-top: 86px;
+  padding-bottom: 33px;
+  background-color: aqua;
+}
+
+.hero-title {
+  margin-bottom: 8px;
+
+  font-family: 'PT Serif';
+  font-size: 90px;
+  line-height: 1.3;
+  color: var(--first-color-text);
+  }
+
+  .hero-text {
+  margin-bottom: 94px;
+  
+  font-size: 20px;
+  line-height: 1.4;
+color: var(--first-color-text);
+  }
+
+  .hero-link {
+  display: inline-block;
+  min-width: 250px;
+  padding: 19px 50px 20px 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 30px;
+  margin-bottom: 184px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: var(--first-color-text);
+  }
+
+  .hero-link-step {
+    margin: 0 auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+  }
+
+  /* -------GALLERY--------- */
+  .gallery {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .gallery-list {
+  margin-left: -32px;
+  margin-bottom: -32px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    width: calc(100% / 4 - 32px);
+    margin-left: 32px;
+    margin-bottom: 32px;
+    border: 1px solid #D9D9DE;
+  border-radius: 6px;
+  }
+
+  .gallery-wrapper {
+    padding: 13px 0px 16px 19px;
+  }
+
+  .gallery-item-text{
+    font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--secondari-color-text);
+  }
+
+/* -----------Направления деятельности-------- */
+.activity {
+  background-color: #f5fcf0;
+  padding-top: 44px;
+  padding-bottom: 80px;
+}
+
+.activity-title {
+  margin-bottom: 50px;
+
+  font-family: 'PT Serif';
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--secondari-color-text);
+}
+
+.activity-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -29px;
+  margin-bottom: -37px;
+}
+
+.activity-item {
+  width: calc(100% / 4 - 29px);
+  margin-left: 29px;
+  margin-bottom: 37px;
+}
+
+/* ---------------Популярные предложения ---------- */
+.offers {
+  padding-top: 76px;
+  padding-bottom: 80px;
+}
+
+.offers-title {
+  margin-bottom: 40px;
+
+  font-family: 'PT Serif';
+  font-size: 30px;
+  line-height: 1.33;
+  color: var(--secondari-color-text);
+}
+
+.offers-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.offers-item:nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* -----------Карта Байкала----------- */
+.map {
+  padding-top: 70px;
+}
+
+.map-title {
+  font-family: 'PT Serif';
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--secondari-color-text);
+}
+
+/* ------------------О Байкале--------------- */
+.info {
+  padding-top: 76px;
+  padding-bottom: 79px;
+}
+
+.container-wrapper {
+  display: flex;
+}
+
+.info-wrapper-right {
+  margin-left: auto;
+}
+
+.info-wrapper-left {
+  width: 448px;
+}
+
+.info-title {
+  margin-bottom: 21px;
+
+  font-family: 'PT Serif';
+  font-size: 30px;
+  line-height: 1.33;
+  color: var(--secondari-color-text);
+}
+
+.info-list {
+  margin-bottom: 40px;
+}
+
+.info-item {
+  margin-bottom: 8px;
+}
+
+.info-item-text {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.info-item-link {
+  font-size: 16px;
+line-height: 19px;
+
+text-decoration-line: underline;
+color: var(--additional-color-text);
+}
+
+/* --------------ФОТОГАЛЕРЕЯ-------------- */
+
+.photo-gallery {
+  background-color: #f2f9fe;
+  padding-top: 44px;
+  padding-bottom: 80px;
+}
+
+.photo-wrapper {
+  margin-bottom: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.photo-title {
+  font-family: 'PT Serif';
+  font-size: 30px;
+  line-height: 1.3;
+  color: var(--secondari-color-text);
+}
+
+.photo-wrapper-right {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+
+.photo-link {
+  margin-right: 55px;
+
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.photo-list {
+  display: flex;
+  
+}
+
+.photo-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.photo-btn {
+  
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #0061D9;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.photo-gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+  margin-bottom: -32px;
+}
+
+.photo-gallery-item {
+  width: calc(100% / 3 - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+
+
+/* --------Байкальский отдых с нами---------------- */
+
+.rest {
+  padding-top: 80px;
+  padding-bottom: 54px;
+}
+
+.rest-title {
+  margin-bottom: 45px;
+  text-align: center;
+
+  font-family: 'PT Serif';
+  font-size: 44px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--secondari-color-text);
+}
+
+.rest-text {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.rest-wrapper {
+  display: flex;
+}
+
+/* ---------- Прогрес------------------- */
+.progress {
+  padding-top: 41px;
+  padding-bottom: 85px;
+}
+
+.progress-list {
+  justify-content: space-between;
+  display: flex;
+}
+
+/* .progress-item {
+  margin-right: 30px;
+} */
+
+.progress-first-text {
+  font-family: 'PT Serif';
+font-weight: 700;
+font-size: 58px;
+line-height: 1.3;
+color: var(--secondary-accent-color);
+}
+
+.progress-secondary-text {
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.3;
+color: var(--secondari-color-text);
+}
+
+.progress-item-one {
+  min-width: 132px;
+  max-width: min-content;
+}
+
+.progress-item-two {
+  width: 279px;
+}
+
+.progress-item-three {
+  width: 197px;
+}
+
+/* --------booking----------- */
+.booking {
+  padding-top: 48px;
+  padding-bottom: 76px;
+}
+
+.booking-title {
+  text-align: center;
+
+  font-family: 'PT Serif';
+  font-size: 30px;
+  line-height: 1.3;
+  color: var(--secondari-color-text);
+}
+
+/* -------footer------ */
+.footer {
+  background-color: #202020;
+  padding-top: 39px;
+  padding-bottom: 45px;
+}
+
+.footer-top-box {
+  display: flex;
+  margin-right: -76px;
+}
+
+.footer-top-wrapper {
+  width: calc(100% / 5 -76px);
+  margin-right: 76px;
+}
+
+.footer-title-top {
+  margin-bottom: 17px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-transform: uppercase;
+  color: var(--first-color-text);
+}
+
+.footer-item-top:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer-item-link-top {
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--first-color-text);
+
+  opacity: 0.8;
+}
+
+.footer-bottom-box {
+  display: flex;
+}
+
+.footer-bottom-wrapper {
+
+}
+
+.footer-bottom-title {
+  font-weight: 500;
+font-size: 14px;
+line-height: 1.3;
+color: var(--first-color-text);
+}
+
+.footer-bottom-text {
+  font-size: 14px;
+line-height: 1.3;
+color: var(--first-color-text);
+opacity: 0.8;
+}
+
+.confidentiality-link {
+  font-size: 14px;
+  line-height: 1.3;
+  text-decoration-line: underline;
+  color: var(--first-color-text);
+}
+
+.confidentiality-text {
+  font-size: 12px;
+line-height: 1.3;
+color: var(--first-color-text);
 }
