@@ -524,11 +524,17 @@
                         </div>
                             <textarea class="textarea-field" name="" id="" cols="" rows="" placeholder="Комментарий"></textarea>
                     </div>
-                    <div>
-                        <button class="" type="submit">Отправить заявку</button>
+                    <div class="form-check">
+                        <button class="form-btn" type="submit">Отправить заявку</button>
                         <div class="form-checkbox">
-                            <input type="checkbox" name="agreement" id="agreement">
-                            <label for="agreement">Согласие на обработку персональных данных</label>
+                            <input class="agreement-check visually-hidden" type="checkbox" name="agreement" id="agreement" required>
+                            <label for="agreement" class="check-text">
+                                <span class="check-img">
+                                    <svg width="20px" height="19px">
+                                        <use href="./img/icons.svg#check"></use>
+                                    </svg>
+                                </span>
+                                Согласие на обработку персональных данных</label>
                         </div>
                     </div>
 
